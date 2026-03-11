@@ -1,4 +1,11 @@
 package com.example.demo.dto;
 
-public class MemberResponse {
+import java.time.LocalDateTime;
+
+public record MemberResponse (
+        Long id,
+        String name,
+        String email,
+        LocalDateTime createdAt
+) {
 }

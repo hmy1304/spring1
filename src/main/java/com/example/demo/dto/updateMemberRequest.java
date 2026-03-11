@@ -1,4 +1,7 @@
 package com.example.demo.dto;
 
-public class updateMemberRequest {
+public record updateMemberRequest (
+        String name,
+        String email
+) {
 }
